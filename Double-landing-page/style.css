@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h1 {
+    font-size: 80px;
+    color: aliceblue;
+    backdrop-filter: brightness(0.5);
+    letter-spacing: 3px;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    border: 3px solid;
+    padding: 12px 18px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.8s ease-in-out;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.split {
+    width: 50%;
+    height: 100%;
+    top: 0;
+}
+
+.split.left {
+    left: 0;
+    position: absolute;
+    background-color: lightpink;
+}
+
+.split.right {
+    right: 0;
+    position: absolute;
+    background-color: lightblue;
+}
