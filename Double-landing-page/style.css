@@ -22,7 +22,8 @@ h1 {
     padding: 12px 18px;
     font-size: 20px;
     cursor: pointer;
-    transition: 0.8s ease-in-out;
+    transition: 0.5s ease-in-out;
+    white-space: nowrap;
 }
 
 .btn:hover {
@@ -34,16 +35,42 @@ h1 {
     width: 50%;
     height: 100%;
     top: 0;
+    overflow: hidden;
 }
 
 .split.left {
     left: 0;
     position: absolute;
     background-color: lightpink;
+    background-image: url("https://www.apple.com/newsroom/images/product/iphone/standard/Apple_iphone13_hero_09142021_inline.jpg.large.jpg");
+    background-size: cover;
+
 }
 
 .split.right {
     right: 0;
     position: absolute;
     background-color: lightblue;
+    background-image: url("https://m.media-amazon.com/images/I/81pZEYcHE1L._AC_SX679_.jpg");
+    background-size: cover;
+}
+
+.active-right .left {
+    width: 25%;
+}
+
+.active-right .right {
+    width: 75%;
+}
+
+.active-left .left {
+    width: 75%;
+}
+
+.active-left .right {
+    width: 25%;
+}
+
+.left , .right {
+    transition: width 2s ease-in-out;
 }
